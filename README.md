@@ -1,7 +1,18 @@
 
 # **Deploy ETLT Infrastructure with Airbyte, GCS, BigQuery, Dbt and Airflow**
-This project sets up Dokcer container to perform data extraction with Airbyte. That allows us to try new airbyte data extraction usecases.
+[![Airbyte](https://img.shields.io/badge/-Airbyte-2962FF?style=flat&logo=airbyte&logoColor=white)](https://airbyte.com/)
+[![Google Cloud Storage](https://img.shields.io/badge/-GCS-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/storage)
+[![BigQuery](https://img.shields.io/badge/-BigQuery-34A853?style=flat&logo=google-bigquery&logoColor=white)](https://cloud.google.com/bigquery)
+[![dbt](https://img.shields.io/badge/-dbt-FF694B?style=flat&logo=dbt&logoColor=white)](https://www.getdbt.com/)
+[![Airflow](https://img.shields.io/badge/-Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)](https://airflow.apache.org/)
+[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
+[![VisualCrossing](https://img.shields.io/badge/-VisualCrossing-FFB300?style=flat&logo=visualcrossing&logoColor=white)](https://www.visualcrossing.com/)
+[![Opendatasoft](https://img.shields.io/badge/-Opendatasoft-00B6E3?style=flat&logo=opendatasoft&logoColor=white)](https://www.opendatasoft.com/)
 
+
+
+
+This project sets up Dokcer container to perform data extraction with Airbyte. That allows us to try new airbyte data extraction usecases.
 It sets up an analytics architecture using Docker containers for data extraction, storage, orchestration, and transformation.
 
 - **Airbyte (Extract):** Retrieves data from various sources and loads it into Google Cloud Storage (GCS).
