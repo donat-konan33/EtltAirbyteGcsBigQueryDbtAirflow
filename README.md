@@ -41,14 +41,13 @@ To configure the connector, you will need:
 
 For guidance on building custom API connectors, refer to the [Airbyte Connector Builder tutorial](https://docs.airbyte.com/platform/connector-development/connector-builder-ui/tutorial).
 
-In this project, multiple source connectors are created—each handling a chunk of locations (to cover all 99 departments of metropolitan France)—with MinIO as the destination.
+In this project, multiple sources with the same connector to the weather API are created—each handling a chunk of locations (to cover all 99 departments (96 metropolitan and 3 DOM) of  France)—with ``Google Cloud Storage`` as the destination.
 
-Airbyte supports S3-compatible storage, and MinIO works seamlessly with Amazon S3 APIs. To set up the destination:
-- Obtain your MinIO endpoint URL, access key, and secret key.
-- In Airbyte, select the S3-compatible destination connector and enter your MinIO details.
-- Ensure your MinIO bucket has read/write permissions and encryption in transit is enabled.
+Requirements
+- Allow connections from Airbyte server to your GCS .
+- An GCP bucket with credentials (for the COPY strategy).
 
-If you encounter issues, consult the [Airbyte S3 destination documentation](https://docs.airbyte.com/integrations/destinations/s3) or reach out to the Airbyte community.
+If you encounter issues, consult the [Airbyte GCS destination documentation](https://docs.airbyte.com/integrations/sources/gcs) or reach out to the Airbyte community. You might find how to connect to GCS.
 
 ### 2. **Clone the repository**:
   ```bash
@@ -64,6 +63,7 @@ If you encounter issues, consult the [Airbyte S3 destination documentation](http
 ### 4. **Access web interfaces**:
   - Airbyte: [http://localhost:8000](http://localhost:8000)
   - Airflow: [http://localhost:8080](http://localhost:8080)
+
 You may also use [`DBeaver to overwiew`](https://stackoverflow.com/questions/70424637/connect-docker-postgres-from-outside-dbeaver) your Airflow metadata.
 
 ### 5. **Connect to BigQuery** using your preferred SQL client or the Google Cloud Console to view and validate dbt transformations.
